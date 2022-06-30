@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('image');
             $table->string('birth_date');
             $table->string('phone_number');
-            $table->string('referred_by');
+            $table->integer('referred_by');
             $table->integer("role_id")->default(2);
             $table->rememberToken();
             $table->timestamps();

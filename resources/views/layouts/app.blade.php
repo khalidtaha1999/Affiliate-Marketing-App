@@ -60,7 +60,17 @@
                                     {{ Auth::user()->name }}
                                 </a>
 
+
+
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    @if(Auth::check())
+                                        @if(Auth::user()->checkRole())
+                                            <a
+                                                class="dropdown-item"  href="/admin">
+                                                Admin Page
+                                            </a>
+                                        @endif
+                                    @endif
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
