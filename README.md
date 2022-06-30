@@ -1,6 +1,6 @@
 <h1>first type in terminal </h1>
 <ol>
-    <li>php artisan migrate<li/>
+    <li>php artisan migrate</li>
     <li>php artisan db:seed</li>
     </ol>
 
